@@ -25,6 +25,11 @@ class MyHomePage extends StatelessWidget {
                     '$counter',
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
+                  SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: store.decrementCounter,
+                    child: Text(store.counter2.toString()),
+                  ),
                 ],
               ),
             ),
